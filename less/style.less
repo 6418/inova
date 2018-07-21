@@ -472,6 +472,16 @@ section.services-section {
 .portfolio-section {
     padding: 60px 0;
     background: #fafafa;
+    h3{
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @color1;
+        margin: 0 0 20px;
+        padding-bottom: 20px;
+        position: relative;
+        text-align: center;
+    }
     .portfolio-box.owl-wrapper {
         margin-left: -15px;
         margin-right: -15px;
@@ -653,6 +663,7 @@ section.services-section {
         }
         p {
             margin-bottom: 0px;
+            color: #FFF;
         }
         .about-us-post {
             overflow: hidden;
@@ -781,17 +792,17 @@ section.services-section {
             padding: 10px;
             h2 {
                 .heading2;
-                font-size: 18px;
                 margin: 0;
+                text-align: center;
                 a {
                     .anchor;
-                    display: block;
-                    color: #FFF;
+                    // display: block;
+                    color: @color1;
                     font-weight: bold;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 139px;
+                    // position: absolute;
+                    // width: 100%;
+                    // height: 100%;
+                    // top: 139px;
                 }
                 a:hover {
                     color: @skin-color;
@@ -809,6 +820,28 @@ section.services-section {
             > a:hover {
                 color: @skin-color;
             }
+        }
+    }
+    h3{
+        font-family: @font;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @color1;
+        margin: 0 0 20px;
+        padding-bottom: 20px;
+        position: relative;
+        text-align: center;
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 30px;
+            background: #ef7f1a;
+            height: 1px;
         }
     }
 }
@@ -988,7 +1021,7 @@ section.services-section {
 
 .page-banner-section {
     padding: 50px 0;
-    background: #252525;
+    background: #ef7f1a;
     overflow: hidden;
     h1 {
         .heading1;
@@ -1042,6 +1075,7 @@ section.services-section {
     }
     h2 {
         .heading2;
+        font-size: 18px;
     }
 }
 
@@ -1689,6 +1723,9 @@ footer {
     }
     .tabs-section .tab-pane img {
         margin-bottom: 20px;
+    }
+    .tabs-section .about-box {
+        margin-top: 40px;
     }
     .quote-section .text-box {
         padding-right: 0;
