@@ -163,6 +163,10 @@ website:    http://www.themepunch.com
                 font-size: 14px;
                 margin-right: 10px;
             }
+            a{
+                color: #FFF;
+                text-decoration: none;
+            }
         }
     }
     ul.social-icons {
@@ -443,6 +447,10 @@ section.services-section {
     .services-box {
         .services-post {
             margin-bottom: 40px;
+            transition: all ease .5s;
+            &:hover{
+                transform: scale(1.1);
+            }
             img {
                 width: 100%;
                 margin-bottom: 30px;
@@ -743,7 +751,6 @@ section.services-section {
     }
     .news-post {
         position: relative;
-       
         .news-gallery {
             position: relative;
             img {
